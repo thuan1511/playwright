@@ -11,6 +11,7 @@ class MainPage{
     async login(username, password){
         // to do
         await this.page.click(this.btnDangNhap);
+        // await this.page.waitForNavigation({waitUntil: `domcontentloaded`});
         await this.page.fill(this.txtUsername, username);
         await this.page.fill(this.txtPassword, password);
         await this.page.click(this.btnDangNhap2);
